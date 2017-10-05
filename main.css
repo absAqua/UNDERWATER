@@ -52,6 +52,22 @@ header{
 	display: flex;
 	flex-direction: column;
 }
+.nav_button_facog{
+	height: 60px;
+	width: 60px;
+	margin: 8px;
+	border: 2px solid black;
+	display: flex;
+	flex-direction: column;
+}
+.fa-cog:hover{
+	-webkit-animation: fa-spin 2s infinite linear;
+    animation: fa-spin 2s infinite linear;
+}
+.fa-question-circle:hover{
+	-webkit-animation: fa-spin 2s infinite linear;
+    animation: fa-spin 2s infinite linear;
+}
 .top{
 	width: 100%;
 	display: flex;
