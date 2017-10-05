@@ -19,27 +19,36 @@ header{
 }
 .nav{
 	width: 80px;
-	height: 800px;
+	height: 100vh;
 	border: 1px solid black;
-	display:  flex;
+	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between; 
 	box-sizing: border-box;
 	align-content: start;
 }
-.user_icon{
+.user_icon_box{
 	width: 80px;
 	height: 80px;
 	display: flex;
-	margin-left: 5px;
-	margin-right: 5px;
-	border-bottom: 1px solid black;
+	margin: 8px;
+	border-bottom: 2px solid black;
+}
+.user_icon{
+	width: 50px;
+	height: 50px;
+	border: solid 2px black;
+	border-radius: 25px;
+	display: flex;
+	align-self: center;
+	margin: auto;
+
 }
 .nav_button{
 	height: 60px;
 	width: 60px;
 	margin: 8px;
-	border: 1px solid black;
+	border: 2px solid black;
 	display: flex;
 	flex-direction: column;
 }
@@ -53,7 +62,7 @@ header{
 	width: 100%;
 	height: 40px;
 	display: flex;
-	background: #343d46;
+	background: white;
 	border: 1px solid black;
 }
 .search{
@@ -61,7 +70,7 @@ header{
 	height: 30px;
 	display: flex;
 	align-self: center;
-	margin-left: 50px;
+	margin-left: 30px;
 	vertical-align: middle;
 	white-space: nowrap;
 	overflow: hidden;
@@ -69,18 +78,22 @@ header{
 .search input#search{
 	width: 300px;
 	height: 30px;
-	background: #2b303b;
-	border: none;
-	color: #fff;
-	padding-left: 40px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	background: white;
+	border: solid 2px black;
+	outline: 0;
+	padding-left: 15px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-top-right-radius: 5px;
+	border-top-right-radius: 5px;
 	-webkit-transition: background .23s ease;
 	-moz-transition: background .23s ease;
 	-ms-transition: background .23s ease;
 	-o-transition: background .23s ease;
 	transition: background .23s ease;
+}
+.search:hover input#search, .search:focus input#search, .search:active input#search{
+	outline: 0;
+	outline-offset: 0;
 }
 .search button.icon{
 	-webkit-border-top-left-radius: 5px;
@@ -89,8 +102,8 @@ header{
   	-moz-border-radius-bottom-left: 5px;
   	border-top-left-radius: 5px;
   	border-bottom-left-radius: 5px;
-	border: none;
-	background: #232833;
+	border: solid 2px black;
+	background: white;
 	height: 30px;
 	width: 30px;
 	color: #4f5b66;
@@ -109,9 +122,9 @@ header{
 	background: white;
 }
 .logo_window{
-	height: 235px;
+	height: 250px;
 	width: 100%;
-	border: 1px solid black;
+	border: 2px solid black;
 	display: flex;
 }
 .sign{
@@ -120,15 +133,21 @@ header{
 	margin-top: 23px;
 }
 .sign_in{
-	background-color: #4CAF50;
-	border: none;
+	background-color: white;
+	border: 2px solid black;
 	padding: 15px 32px;
 	text-align: center;
 }
+.sign_in:focus, .sign_in:hover, .sign_in:active{
+outline: none;
+}
 .sign_up{
-	background-color: #4CAF50;
-	border: none;
+	background-color: white;
+	border: 2px solid black;
 	padding: 15px 32px;
 	text-align: center;
 	margin-left: 100px;
+}
+.sign_up:focus, .sign_up:hover, .sign_up:active{
+outline: none;
 }
