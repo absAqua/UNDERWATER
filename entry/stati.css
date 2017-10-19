@@ -1,0 +1,41 @@
+.box{
+	height: 100vh;
+	border: 1px solid black;
+	
+}
+.content{
+	float:left;
+	height:60vh;
+	width:79%;
+	border: 2px solid black;
+}
+.img{
+	width: 100%;
+	
+}
+.td{
+	text-align: center;
+	float: left;
+}
+.date{
+	width: 68px;
+	height: 68px;
+	background-color: #f99b16;
+	border-radius: 10em;
+	margin-left: 30px;
+    font-weight: 700;
+
+}
+.tema{
+	margin-left: 400px;
+}
+.box-mnu{
+	width:20%;
+	height:100vh;
+	border: 2px solid black;
+	float: right;
+}
+.list-unstyled{
+	margin-right: 20px;
+	list-style-type: none;
+}
